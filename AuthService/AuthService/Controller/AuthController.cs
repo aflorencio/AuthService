@@ -45,6 +45,8 @@ namespace AuthService
 
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             context.Response.AppendHeader("Content-Type", "application/json");
+            context.Response.AppendHeader("Access-Control-Allow-Origin", "*");
+            context.Response.AppendHeader("Access-Control-Allow-Headers", "X-Requested-With");
             context.Response.SendResponse(json);
             return context;
         }
@@ -78,6 +80,8 @@ namespace AuthService
 
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             context.Response.AppendHeader("Content-Type", "application/json");
+            context.Response.AppendHeader("Access-Control-Allow-Origin", "*");
+            context.Response.AppendHeader("Access-Control-Allow-Headers", "X-Requested-With");
             context.Response.SendResponse(json);
             return context;
         }
@@ -94,6 +98,8 @@ namespace AuthService
 
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             context.Response.AppendHeader("Content-Type", "application/json");
+            context.Response.AppendHeader("Access-Control-Allow-Origin", "*");
+            context.Response.AppendHeader("Access-Control-Allow-Headers", "X-Requested-With");
             context.Response.SendResponse(json);
             return context;
         }
